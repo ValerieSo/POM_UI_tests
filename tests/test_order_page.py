@@ -1,7 +1,7 @@
 import allure
 from page_objects.home_page import HomePage
 from page_objects.order_page import OrderPage
-from data.data import generate_order_info
+from data.helpers import generate_order_info
 
 
 class TestOrderPage:

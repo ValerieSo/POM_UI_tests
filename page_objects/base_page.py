@@ -16,7 +16,7 @@ class BasePage:
         return self.driver.find_element(*locator)
 
     def should_be_visible(self, locator):
-        return WebDriverWait(self.driver, 5).until_not(expected_conditions.visibility_of_element_located(locator))
+        return WebDriverWait(self.driver, 5).until(expected_conditions.visibility_of_element_located(locator))
 
     def should_not_be_visible(self, locator):
         return WebDriverWait(self.driver, 5).until_not(expected_conditions.visibility_of_element_located(locator))
